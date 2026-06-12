@@ -1,0 +1,32 @@
+{
+  "name": "spoil-editor",
+  "version": "1.0.0",
+  "description": "Hybrid VS Code and Cursor style IDE with native local agent orchestration",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-packager . SPOIL --platform=win32 --arch=x64 --out=dist --overwrite"
+  },
+  "keywords": [
+    "electron",
+    "monaco",
+    "ide",
+    "cursor",
+    "ollama",
+    "local-ai",
+    "developer-tools"
+  ],
+  "author": "SPOIL Editor",
+  "license": "MIT",
+  "dependencies": {
+    "@monaco-editor/loader": "^1.7.0",
+    "diff": "^9.0.0",
+    "electron": "^42.3.1",
+    "electron-store": "^8.1.0",
+    "monaco-editor": "^0.52.2",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "electron-packager": "^17.1.2"
+  }
+}
